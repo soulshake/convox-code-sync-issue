@@ -1,10 +1,20 @@
 
-Steps to reproduce:
+## Steps to reproduce
 
 - `convox start`
+
+In another terminal:
+
 - `echo "i can change!" > anotherdir/hello`
 - `echo "i can't change, i has a sad" > migrations/hello`
 
+## Reproduced scenarios
+
+| Directory is named... | Executable is named... | Issue appears? |
+| --------------------- | ---------------------- | ---------------|
+| `migrations/`         | `migration`            | Yes            |
+| `migration/`          | `migrations`           | No             |
+| `foofoo/`             | `foo`                  | Yes            |
 
 ## Details
 
