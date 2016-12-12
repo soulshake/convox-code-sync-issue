@@ -1,0 +1,6 @@
+#!/bin/sh
+
+while true; do
+    cat /app/migrations/hello && sleep 1
+    cat /tmp/anotherdir/hello && sleep 1
+done
